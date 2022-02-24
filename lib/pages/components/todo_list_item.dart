@@ -37,10 +37,10 @@ class TodoListItem extends StatelessWidget {
           ]),
         ),
         endActionPane: ActionPane(
+          extentRatio: 0.22,
           motion: const StretchMotion(),
           children: [
             SlidableAction(
-              flex: 4,
               onPressed: (context) {
                 onDelete(todo);
               },
